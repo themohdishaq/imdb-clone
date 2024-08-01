@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 function page() {
   return (
-    <div className='w-full h-screen relative flex sm:flex-col justify-center items-center'>
+    <div className='w-full h-screen relative flex flex-col justify-center items-center'>
         <Image src="/team.jpeg" alt="team" height={1000} width={1000} className='object-cover w-full h-auto'/>
         <div>
             <Link href={'/about/teamdetails'}>
