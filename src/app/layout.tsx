@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Providers from "./Providers";
 import Navbar from "./components/Navbar";
 import { Suspense } from "react";
-
+import ClientProvider from "./components/ClientProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ClientProvider>
       <body className={inter.className}>
       
         <Providers>
@@ -30,7 +31,9 @@ export default function RootLayout({
         </Suspense>
         </Providers>
         
+        
         </body>
+        </ClientProvider>
     </html>
   );
 }

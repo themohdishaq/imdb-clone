@@ -11,8 +11,7 @@ interface NavbarItemProps {
 function NavbarItem({ title, param }: NavbarItemProps) {
     const searchParams = useSearchParams();
     const genre = searchParams.get('genre'); 
-    console.log(genre);  
-    console.log(param);
+
 
     return (
         <div>

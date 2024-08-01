@@ -1,4 +1,3 @@
-// src/app/page.tsx
 import React from 'react';
 import ClientComponent from './components/ClientComponent';
 

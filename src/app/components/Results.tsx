@@ -21,14 +21,14 @@ interface ResultsProps {
 }
 
 function Results({ results }: ResultsProps) {
-  const router = useRouter(); // Use the useRouter hook
+  const router = useRouter();
 
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4'>
       {results.map((result) => (
         <div
           key={result.id}
-          onClick={() => router.push(`/movie/${result.id}`)} // Use router.push for navigation
+          onClick={() => router.push(`/movie/${result.id}`)} 
           className='bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer'
         >
           <img
