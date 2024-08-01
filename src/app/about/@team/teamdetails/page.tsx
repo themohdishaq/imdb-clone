@@ -10,7 +10,7 @@ function TeamDetails() {
                 { name: "John Vick", position: "COO", imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCW8ayM9K_iNzX81NSjgpGcl30jDvsTSiIg&s" }
             ].map((member, index) => (
                 <div key={index} className="w-full px-2">
-                    <div className="py-4 px-4 bg-white rounded-xl shadow-lg space-y-2 flex sm:items-center">
+                    <div className="py-4 px-4 bg-white rounded-xl shadow-lg space-y-2 flex sm:flex-row flex-col sm:items-center">
                         <img className=" mx-auto h-auto w-16 rounded-full flex-1" src={member.imgSrc} alt={`${member.name}'s Face`} />
                         <div className="text-left space-y-2 flex-1">
                             <div className="space-y-0.5">
